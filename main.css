@@ -1,0 +1,50 @@
+body {
+    margin: 10px;
+    transition: 6s;
+    -webkit-transition: 6s;
+    -moz-transition: 6s;
+    -ms-transition: 6s;
+    -o-transition: 6s;
+    background-color: #000;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 30px;
+}
+
+::selection {
+    background-color: rgb(10, 106, 119);
+}
+
+main {
+    height: 600px;
+    width: auto;
+    background-color: #000;
+    opacity: 0.9;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+header {
+    font-size: 200px;
+    text-align: center;
+    padding: 20px;
+}
+
+p {
+    text-align: center;
+    padding: 10px;
+    width: auto;
+    margin: auto;
+}
+
+#btn {
+    width: 80px !important;
+}
+
+#btn:hover {
+    cursor: pointer;
+}
