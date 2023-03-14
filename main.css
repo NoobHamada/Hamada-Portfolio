@@ -17,15 +17,15 @@ body {
 }
 
 main {
-    height: 600px;
+    height: auto;
     width: auto;
     background-color: #000;
     opacity: 0.9;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    border-radius: 35px 0 35px 0;
+    -webkit-border-radius: 35px 0 35px 0;
+    -moz-border-radius: 35px 0 35px 0;
+    -ms-border-radius: 35px 0 35px 0;
+    -o-border-radius: 35px 0 35px 0;
 }
 
 header {
@@ -41,10 +41,30 @@ p {
     margin: auto;
 }
 
-#btn {
-    width: 80px !important;
+#contact {
+    width: 170px !important;
+    cursor: pointer;
 }
 
-#btn:hover {
+.hide {
+    display: none;
+}
+
+#revealProj {
     cursor: pointer;
+}
+
+img {
+    height: auto;
+    width: auto;
+    display: block;
+    margin: 20px auto;
+    width: 50%;
+    cursor: pointer;
+    border: 15px white solid;
+    border-radius: 35px 0 35px 0;
+    -webkit-border-radius: 35px 0 35px 0;
+    -moz-border-radius: 35px 0 35px 0;
+    -ms-border-radius: 35px 0 35px 0;
+    -o-border-radius: 35px 0 35px 0;
 }
