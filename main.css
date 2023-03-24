@@ -1,5 +1,5 @@
 body {
-    margin: 10px;
+    margin: 0;
     transition: 6s;
     -webkit-transition: 6s;
     -moz-transition: 6s;
@@ -7,13 +7,14 @@ body {
     -o-transition: 6s;
     background-color: #000;
     color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Formula Condensed";
     font-style: italic;
     font-size: 30px;
 }
 
 ::selection {
-    background-color: rgb(10, 106, 119);
+    background-color: white;
+    color: black;
 }
 
 main {
@@ -21,11 +22,11 @@ main {
     width: auto;
     background-color: #000;
     opacity: 0.9;
-    border-radius: 35px 0 35px 0;
-    -webkit-border-radius: 35px 0 35px 0;
-    -moz-border-radius: 35px 0 35px 0;
-    -ms-border-radius: 35px 0 35px 0;
-    -o-border-radius: 35px 0 35px 0;
+    border-radius: 80px 0 200px 0;
+    -webkit-border-radius: 80px 0 200px 0;
+    -moz-border-radius: 80px 0 200px 0;
+    -ms-border-radius: 80px 0 200px 0;
+    -o-border-radius: 80px 0 200px 0;
 }
 
 header {
@@ -42,7 +43,7 @@ p {
 }
 
 #contact {
-    width: 170px !important;
+    width: 190px !important;
     cursor: pointer;
 }
 
@@ -55,8 +56,8 @@ p {
 }
 
 img {
-    height: auto;
-    width: auto;
+    height: 500px;
+    width: 500px;
     display: block;
     margin: 20px auto;
     width: 50%;
