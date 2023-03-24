@@ -1,10 +1,10 @@
 body {
     margin: 0;
-    transition: 6s;
-    -webkit-transition: 6s;
-    -moz-transition: 6s;
-    -ms-transition: 6s;
-    -o-transition: 6s;
+    transition: 15s;
+    -webkit-transition: 15s;
+    -moz-transition: 15s;
+    -ms-transition: 15s;
+    -o-transition: 15s;
     background-color: #000;
     color: white;
     font-family: "Formula Condensed";

@@ -10,7 +10,7 @@ window.onload = function () {
 
         let backgroundColor = `#${color.join("")}`;
         document.body.style.backgroundColor = backgroundColor;
-    }, 2000)
+    }, 3500)
 };
 
 // Selecting Contact Button
