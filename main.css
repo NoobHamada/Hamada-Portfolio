@@ -56,11 +56,11 @@ p {
 }
 
 img {
-    height: 500px;
-    width: 500px;
+    min-height: 300px;
+    max-height: 600px;
+    width: 70%;
     display: block;
     margin: 20px auto;
-    width: 50%;
     cursor: pointer;
     border: 15px white solid;
     border-radius: 35px 0 35px 0;
