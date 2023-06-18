@@ -1,17 +1,47 @@
-// Random Background Color
+// Check LocalStorage For Colors
 window.onload = function () {
-    setInterval(function () {
-        let hexadecimals = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"]
-        let color = [];
+    if (localStorage.getItem("color")) {
+        document.body.style.backgroundColor = localStorage.getItem("color");
+    } else {
+        randomColor()
+    }
+};
 
+let backgroundColor;
+let hexadecimals = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"];
+let color = [];
+
+// Random Background Color
+
+function randomColor() {
+    setInterval(function () {
         for (let i = 0; i < 6; i++) {
             color.push(hexadecimals[Math.trunc(Math.random() * hexadecimals.length)])
         }
 
-        let backgroundColor = `#${color.join("")}`;
-        document.body.style.backgroundColor = backgroundColor;
+        document.body.style.backgroundColor = `#${color.join("")}`;
     }, 3500)
 };
+
+// Buttons For Changing Background Color
+let blackbtn = document.getElementById("blkBg");
+let randbtn = document.getElementById("randBg");
+let whitebtn = document.getElementById("witBg");
+
+blackbtn.addEventListener("click", function () {
+    window.localStorage.setItem("color", "black");
+    window.location.reload();
+});
+
+whitebtn.addEventListener("click", function () {
+    window.localStorage.setItem("color", "white");
+    window.location.reload();
+});
+
+randbtn.addEventListener("click", function () {
+    window.localStorage.clear();
+    window.location.reload();
+});
 
 // Selecting Contact Button
 let contact = document.getElementById("contact");
@@ -48,11 +78,11 @@ revealProj.addEventListener("click", function () {
     info.style.top = "15%";
     info.style.left = "15%";
     document.body.appendChild(info);
-    
+
     // Timeout To Remove The (Info) Div
-    setTimeout(function() {
+    setTimeout(function () {
         info.remove();
-    }, 3000)
+    }, 2000)
 })
 
 // Clicking On Images > Sending To Real Pages
