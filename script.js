@@ -1,27 +1,19 @@
+let backgroundColor;
+let hexadecimals = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"];
+let color = [];
+
 // Check LocalStorage For Colors
 window.onload = function () {
     if (localStorage.getItem("color")) {
         document.body.style.backgroundColor = localStorage.getItem("color");
     } else {
-        randomColor()
-    }
-};
-
-let backgroundColor;
-let hexadecimals = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"];
-let color = [];
-
-// Random Background Color
-
-function randomColor() {
-    setInterval(function () {
         for (let i = 0; i < 6; i++) {
             color.push(hexadecimals[Math.trunc(Math.random() * hexadecimals.length)])
         }
-
         document.body.style.backgroundColor = `#${color.join("")}`;
-    }, 3500)
+    }
 };
+
 
 // Buttons For Changing Background Color
 let blackbtn = document.getElementById("blkBg");
@@ -30,16 +22,20 @@ let whitebtn = document.getElementById("witBg");
 
 blackbtn.addEventListener("click", function () {
     window.localStorage.setItem("color", "black");
-    window.location.reload();
+    document.body.style.backgroundColor = window.localStorage.getItem("color");
 });
 
 whitebtn.addEventListener("click", function () {
     window.localStorage.setItem("color", "white");
-    window.location.reload();
+    document.body.style.backgroundColor = window.localStorage.getItem("color");
 });
 
 randbtn.addEventListener("click", function () {
-    window.localStorage.clear();
+    for (let i = 0; i < 6; i++) {
+        color.push(hexadecimals[Math.trunc(Math.random() * hexadecimals.length)])
+    }
+    window.localStorage.setItem("color", `#${color.join("")}`);
+    document.body.style.backgroundColor = `#${color.join("")}`;
     window.location.reload();
 });
 
