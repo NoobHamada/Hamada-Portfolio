@@ -1,3 +1,7 @@
+$(document).ready(function() {
+    $("#whatsNum").hide()
+})
+
 let backgroundColor;
 let hexadecimals = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"];
 let color = [];
@@ -39,18 +43,9 @@ randbtn.addEventListener("click", function () {
     window.location.reload();
 });
 
-// Selecting Contact Button
-let contact = document.getElementById("contact");
-let whatsNum = document.getElementById("whatsNum");
-
-// Toggle (Hide / Show) Whatsapp Number
-contact.addEventListener("click", function () {
-    if (whatsNum.className == "hide") {
-        whatsNum.classList.remove("hide");
-    } else {
-        whatsNum.className = "hide";
-    }
-});
+$("#contact").click(function() {
+    $("#whatsNum").slideToggle(500)
+})
 
 // Selecting The Clickable Paragraph + The Images
 let revealProj = document.getElementById("revealProj");
