@@ -4,4 +4,6 @@ $(document).ready(function () {
             top: '50px'
         }, 200)
     })
+    
+    console.log($('main').offset())
 })

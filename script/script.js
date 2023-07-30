@@ -83,3 +83,6 @@ images[3].onclick = function () {
 images[4].onclick = function () {
     window.open("https://noobhamada.github.io/zombie/", "_blank");
 }
+images[5].onclick = function () {
+    window.open("https://noobhamada.github.io/Paper-Scissors-Rock-Game/", "_blank");
+}
