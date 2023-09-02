@@ -1,7 +1,3 @@
-$(document).ready(function() {
-    $("#whatsNum").hide()
-})
-
 let backgroundColor;
 let hexadecimals = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"];
 let color = [];
@@ -18,11 +14,10 @@ window.onload = function () {
     }
 };
 
-
 // Buttons For Changing Background Color
 let blackbtn = document.getElementById("blkBg");
-let randbtn = document.getElementById("randBg");
 let whitebtn = document.getElementById("witBg");
+let randbtn = document.getElementById("randBg");
 
 blackbtn.addEventListener("click", function () {
     window.localStorage.setItem("color", "black");
@@ -43,10 +38,6 @@ randbtn.addEventListener("click", function () {
     window.location.reload();
 });
 
-$("#contact").click(function() {
-    $("#whatsNum").slideToggle(500)
-})
-
 // Selecting The Clickable Paragraph + The Images
 let revealProj = document.getElementById("revealProj");
 let images = document.querySelectorAll("img");
@@ -63,7 +54,11 @@ revealProj.addEventListener("click", function () {
 
     // Timeout To Remove The (Info) Div
     setTimeout(function () {
-        info.remove();
+        try {
+            info.remove();
+        } catch (error) {
+            console.log('No Info Div To Remove')
+        }
     }, 2000)
 })
 

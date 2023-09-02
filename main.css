@@ -38,23 +38,51 @@ li {
     -o-transition: 0.7s;
 }
 
-li:hover {
+ul > li:hover {
     filter: blur(3px);
     -webkit-filter: blur(3px);
 }
 
+/* Background Colors list */
 #blkBg {
     background-color: black;
 }
-
 #witBg {
     background-color: white;
 }
-
 #randBg {
     background: linear-gradient(90deg, white, blue);
 }
 
+aside {
+    position: fixed;
+    top: 0;
+    right: 10px;
+    z-index: 1;
+    color: white;
+    height: 40px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+}
+
+aside > ol > li {
+    position: relative;
+    right: 30px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-style: normal;
+    list-style: none;
+}
+
+aside > ol > li:hover {
+    right: 40px;
+    font-size: 20px;
+}
+
+/* Main Start */
 main {
     height: auto;
     width: auto;
