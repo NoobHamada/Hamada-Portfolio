@@ -25,7 +25,7 @@ blackbtn.addEventListener("click", function () {
 });
 
 whitebtn.addEventListener("click", function () {
-    window.localStorage.setItem("color", "white");
+    window.localStorage.setItem("color", "#f0f0f0");
     document.body.style.backgroundColor = window.localStorage.getItem("color");
 });
 

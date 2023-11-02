@@ -1,14 +1,14 @@
 body {
     margin: 0;
     background-color: #0f0f0f;
-    color: white;
+    color: #f0f0f0;
     font-style: italic;
     font-size: 30px;
 }
 
 
 ::selection {
-    background-color: white;
+    background-color: #f0f0f0;
     color: #0f0f0f;
 }
 
@@ -25,17 +25,21 @@ li {
     cursor: pointer;
     height: 20px;
     width: 20px;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+    border-radius: 12px 0;
+    -webkit-border-radius: 12px 0;
+    -moz-border-radius: 12px 0;
+    -ms-border-radius: 12px 0;
+    -o-border-radius: 12px 0;
     margin: 3px;
-    transition: 0.7s;
-    -webkit-transition: 0.7s;
-    -moz-transition: 0.7s;
-    -ms-transition: 0.7s;
-    -o-transition: 0.7s;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+ul > li {
+    border: 1px solid #ff5f5f;
 }
 
 ul > li:hover {
@@ -48,23 +52,29 @@ ul > li:hover {
     background-color: #0f0f0f;
 }
 #witBg {
-    background-color: white;
+    background-color: #f0f0f0;
 }
 #randBg {
-    background: linear-gradient(90deg, white, blue);
+    background: linear-gradient(90deg, #f0f0f0, blue);
 }
 
 aside {
+    border: 1px solid #ff5f5f;
+    border-radius: 12px 0;
     position: fixed;
     top: 0;
     right: 10px;
     z-index: 1;
     color: white;
-    height: 40px;
+    height: 25px;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     font-style: normal;
+    -webkit-border-radius: 12px 0;
+    -moz-border-radius: 12px 0;
+    -ms-border-radius: 12px 0;
+    -o-border-radius: 12px 0;
 }
 
 aside > ol > li {
@@ -79,10 +89,9 @@ aside > ol > li {
 
 aside > ol > li:hover {
     right: 40px;
-    font-size: 20px;
 }
 
-/* Main Start */
+/* Main */
 main {
     height: auto;
     width: auto;
@@ -99,7 +108,8 @@ header {
     font-size: 200px;
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 20px;
+    padding-top: 50px;
+    margin-top: 10px;
 }
 
 p {
@@ -131,12 +141,12 @@ p {
 }
 
 img {
-    width: 220px;
+    width: 260px;
     max-height: 300px;
     display: block;
     margin: 10px auto;
     cursor: pointer;
-    border: 7px white solid;
+    border: 7px #f0f0f0 solid;
     border-radius: 30px 0 30px 0;
     -webkit-border-radius: 30px 0 30px 0;
     -moz-border-radius: 30px 0 30px 0;
@@ -149,7 +159,7 @@ img {
     top: -90px;
     left: 100px;
     background-color: #0f0f0f;
-    color: white;
+    color: #f0f0f0;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
