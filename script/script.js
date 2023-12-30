@@ -42,26 +42,6 @@ randbtn.addEventListener("click", function () {
 let revealProj = document.getElementById("revealProj");
 let images = document.querySelectorAll("img");
 
-// Toggle (Hide / Show) Images Of Past Projects
-revealProj.addEventListener("click", function () {
-    for (i = 0; i < images.length; i++) {
-        if (images[i].className == "hide") {
-            images[i].classList.remove("hide")
-        } else {
-            images[i].classList.add("hide")
-        }
-    }
-
-    // Timeout To Remove The (Info) Div
-    setTimeout(function () {
-        try {
-            info.remove();
-        } catch (error) {
-            console.log('No Info Div To Remove')
-        }
-    }, 2000)
-})
-
 // Clicking On Images > Sending To Real Pages
 images[0].onclick = function () {
     window.open("https://noobhamada.github.io/war3_worthy_maps/", "_blank");

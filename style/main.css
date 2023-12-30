@@ -6,7 +6,6 @@ body {
     font-size: 30px;
 }
 
-
 ::selection {
     background-color: #f0f0f0;
     color: #0f0f0f;
@@ -38,10 +37,6 @@ li {
     -o-transition: 0.4s;
 }
 
-ul > li {
-    border: 1px solid #ff5f5f;
-}
-
 ul > li:hover {
     filter: blur(3px);
     -webkit-filter: blur(3px);
@@ -55,7 +50,7 @@ ul > li:hover {
     background-color: #f0f0f0;
 }
 #randBg {
-    background: linear-gradient(90deg, #f0f0f0, blue);
+    background: linear-gradient(90deg, #f0f0f0, #2a2afa);
 }
 
 aside {
@@ -127,26 +122,7 @@ p {
     cursor: pointer;
 }
 
-.imgsDiv {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-
-.hide {
-    display: none;
-}
-
-#revealProj {
-    width: min-content !important;
-    cursor: pointer;
-}
-
 img {
-    width: 260px;
-    max-height: 300px;
-    display: block;
-    margin: 10px auto;
     cursor: pointer;
     border: 7px #f0f0f0 solid;
     border-radius: 30px 0 30px 0;
@@ -154,17 +130,4 @@ img {
     -moz-border-radius: 30px 0 30px 0;
     -ms-border-radius: 30px 0 30px 0;
     -o-border-radius: 30px 0 30px 0;
-}
-
-#info {
-    position: fixed;
-    top: -90px;
-    left: 100px;
-    background-color: #0f0f0f;
-    color: #f0f0f0;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
 }
