@@ -61,3 +61,6 @@ images[4].onclick = function () {
 images[5].onclick = function () {
     window.open("https://noobhamada.github.io/Paper-Scissors-Rock-Game/", "_blank");
 }
+images[6].onclick = function () {
+    window.open("https://noobhamada.github.io/YouTube-Template/", "_blank");
+}
